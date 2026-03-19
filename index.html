@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>発芽する玄米 | お米の前田屋</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            maeda: {
+              green: '#4A7C59',
+              gold: '#C9A227',
+              bg: '#FAF6F0',
+              text: '#3D3D3D',
+              light: '#E8F0EA',
+            }
+          },
+          fontFamily: {
+            sans: ['"Noto Sans JP"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="font-sans text-maeda-text bg-white">
+
+  <!-- ============================================================
+       1. FV（ファーストビュー）
+       ============================================================ -->
+  <section class="relative bg-maeda-bg overflow-hidden">
+    <div class="max-w-4xl mx-auto px-4 py-20 md:py-32 text-center">
+      <!-- 信頼バッジ -->
+      <div class="flex justify-center gap-4 mb-8 text-sm text-maeda-green font-bold">
+        <span class="bg-maeda-light px-3 py-1 rounded-full">有機JAS認証</span>
+        <span class="bg-maeda-light px-3 py-1 rounded-full">楽天 ★4.86</span>
+        <span class="bg-maeda-light px-3 py-1 rounded-full">100年農家</span>
+      </div>
+
+      <!-- メインコピー -->
+      <h1 class="text-3xl md:text-5xl font-black leading-tight mb-6 text-maeda-text">
+        あなたの玄米、<br class="md:hidden">発芽しますか？
+      </h1>
+
+      <!-- サブコピー -->
+      <p class="text-lg md:text-xl text-maeda-text/70 mb-10 max-w-2xl mx-auto leading-relaxed">
+        低温乾燥で胚芽が生きている。<br>
+        100年農家が育てた、発芽する玄米。
+      </p>
+
+      <!-- CTA -->
+      <a href="#products" class="inline-block bg-maeda-gold text-white font-bold text-lg px-10 py-4 rounded-full hover:opacity-90 transition-opacity">
+        食べてみる
+      </a>
+
+      <!-- FV画像プレースホルダー -->
+      <div class="mt-12 bg-maeda-light rounded-2xl h-64 md:h-96 flex items-center justify-center text-maeda-green/40">
+        <span class="text-sm">写真: 朝靄の田んぼ + 発芽した玄米のアップ</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       2. 問題提起
+       ============================================================ -->
+  <section class="bg-maeda-text text-white">
+    <div class="max-w-4xl mx-auto px-4 py-16 md:py-24">
+      <h2 class="text-2xl md:text-4xl font-black text-center mb-12 leading-tight">
+        玄米で失敗した経験、<br class="md:hidden">ありませんか？
+      </h2>
+
+      <!-- 3つの課題 -->
+      <div class="grid md:grid-cols-3 gap-6 mb-12">
+        <div class="bg-white/10 rounded-xl p-6">
+          <p class="text-maeda-gold text-4xl font-black mb-3">01</p>
+          <p class="text-lg font-bold mb-2">硬くてパサパサ</p>
+          <p class="text-white/70 text-sm">「健康にいいと思って玄米にしたのに、家族が食べてくれない」</p>
+        </div>
+        <div class="bg-white/10 rounded-xl p-6">
+          <p class="text-maeda-gold text-4xl font-black mb-3">02</p>
+          <p class="text-lg font-bold mb-2">発芽しない</p>
+          <p class="text-white/70 text-sm">「発芽玄米を作ろうとしたのに、何日待っても芽が出なかった」</p>
+        </div>
+        <div class="bg-white/10 rounded-xl p-6">
+          <p class="text-maeda-gold text-4xl font-black mb-3">03</p>
+          <p class="text-lg font-bold mb-2">吸水が面倒</p>
+          <p class="text-white/70 text-sm">「2〜6時間も浸水させるのが面倒で、結局やめてしまった」</p>
+        </div>
+      </div>
+
+      <!-- 事実の提示 -->
+      <div class="bg-white/5 border border-white/20 rounded-xl p-8 text-center">
+        <p class="text-lg md:text-xl leading-relaxed">
+          実は、スーパーで売られている玄米の多くは、<br class="hidden md:inline">
+          <span class="text-maeda-gold font-bold">高温乾燥で胚芽が死滅</span>しています。<br>
+          <span class="text-white/60 text-base mt-2 block">だから硬い。だから発芽しない。だから美味しくない。</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       3. 解決策（5つの差別化ポイント）
+       ============================================================ -->
+  <section class="bg-maeda-bg">
+    <div class="max-w-4xl mx-auto px-4 py-16 md:py-24">
+      <h2 class="text-2xl md:text-4xl font-black text-center mb-4 text-maeda-green">
+        前田屋の玄米は、ここが違います。
+      </h2>
+      <p class="text-center text-maeda-text/60 mb-12">5つの理由</p>
+
+      <div class="space-y-8">
+        <!-- ポイント1 -->
+        <div class="bg-white rounded-2xl p-6 md:p-8 shadow-sm md:flex md:gap-8 md:items-center">
+          <div class="bg-maeda-light rounded-xl h-48 md:h-auto md:w-72 md:min-h-[200px] flex items-center justify-center text-maeda-green/40 mb-4 md:mb-0 shrink-0">
+            <span class="text-xs">写真: 発芽した白い根のアップ</span>
+          </div>
+          <div>
+            <p class="text-maeda-gold font-black text-sm mb-1">POINT 01</p>
+            <h3 class="text-xl md:text-2xl font-black mb-3">発芽する玄米</h3>
+            <p class="text-maeda-text/70 leading-relaxed">
+              40度の低温で、ゆっくり乾燥させる。だから胚芽が生きている。
+              水に浸ければ白い根が出てくる。自宅で新鮮な発芽玄米が作れます。
+            </p>
+          </div>
+        </div>
+
+        <!-- ポイント2 -->
+        <div class="bg-white rounded-2xl p-6 md:p-8 shadow-sm md:flex md:gap-8 md:items-center md:flex-row-reverse">
+          <div class="bg-maeda-light rounded-xl h-48 md:h-auto md:w-72 md:min-h-[200px] flex items-center justify-center text-maeda-green/40 mb-4 md:mb-0 shrink-0">
+            <span class="text-xs">写真: 炊きたて玄米ごはん</span>
+          </div>
+          <div>
+            <p class="text-maeda-gold font-black text-sm mb-1">POINT 02</p>
+            <h3 class="text-xl md:text-2xl font-black mb-3">失敗しにくい</h3>
+            <p class="text-maeda-text/70 leading-relaxed">
+              吸水なしでも、ふっくら炊ける。炊飯器の白米モードでそのまま炊ける。
+              玄米初心者でも安心の調理耐性。
+            </p>
+          </div>
+        </div>
+
+        <!-- ポイント3 -->
+        <div class="bg-white rounded-2xl p-6 md:p-8 shadow-sm md:flex md:gap-8 md:items-center">
+          <div class="bg-maeda-light rounded-xl h-48 md:h-auto md:w-72 md:min-h-[200px] flex items-center justify-center text-maeda-green/40 mb-4 md:mb-0 shrink-0">
+            <span class="text-xs">写真: 田んぼ全景（青々とした稲）</span>
+          </div>
+          <div>
+            <p class="text-maeda-gold font-black text-sm mb-1">POINT 03</p>
+            <h3 class="text-xl md:text-2xl font-black mb-3">無農薬だから、美味しい</h3>
+            <p class="text-maeda-text/70 leading-relaxed">
+              「無農薬なのに美味しい」ではなく、無農薬だから美味しい。
+              農薬ゼロ、肥料ゼロ。土の力で育つから、味が濃い。冷めても美味しい。
+            </p>
+          </div>
+        </div>
+
+        <!-- ポイント4 -->
+        <div class="bg-white rounded-2xl p-6 md:p-8 shadow-sm md:flex md:gap-8 md:items-center md:flex-row-reverse">
+          <div class="bg-maeda-light rounded-xl h-48 md:h-auto md:w-72 md:min-h-[200px] flex items-center justify-center text-maeda-green/40 mb-4 md:mb-0 shrink-0">
+            <span class="text-xs">写真: 発酵タンク or 液肥（外観のみ）</span>
+          </div>
+          <div>
+            <p class="text-maeda-gold font-black text-sm mb-1">POINT 04</p>
+            <h3 class="text-xl md:text-2xl font-black mb-3">競走馬のうんこで、土を作る</h3>
+            <p class="text-maeda-text/70 leading-relaxed">
+              12年かけて磨いた、独自の発酵技術。
+              競走馬の馬糞から作る門外不出の製法で、土の表情が変わる。匂いが変わる。根の張りが変わる。
+            </p>
+          </div>
+        </div>
+
+        <!-- ポイント5 -->
+        <div class="bg-white rounded-2xl p-6 md:p-8 shadow-sm md:flex md:gap-8 md:items-center">
+          <div class="bg-maeda-light rounded-xl h-48 md:h-auto md:w-72 md:min-h-[200px] flex items-center justify-center text-maeda-green/40 mb-4 md:mb-0 shrink-0">
+            <span class="text-xs">写真: ジュンジ + 田んぼ（後ろ姿 or 作業中）</span>
+          </div>
+          <div>
+            <p class="text-maeda-gold font-black text-sm mb-1">POINT 05</p>
+            <h3 class="text-xl md:text-2xl font-black mb-3">曾祖父から4代、100年の田んぼ</h3>
+            <p class="text-maeda-text/70 leading-relaxed">
+              兵庫県たつの市。揖保乃糸と薄口醤油の発酵文化が根づく町で、
+              200枚の田んぼを守っている。有機JAS認証取得。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       4. 社会的証明
+       ============================================================ -->
+  <section class="bg-white">
+    <div class="max-w-4xl mx-auto px-4 py-16 md:py-24">
+      <!-- 数値実績 -->
+      <div class="text-center mb-12">
+        <h2 class="text-2xl md:text-4xl font-black mb-8 text-maeda-green">お客様の声</h2>
+        <div class="flex justify-center gap-8 md:gap-16">
+          <div>
+            <p class="text-4xl md:text-5xl font-black text-maeda-gold">4.86</p>
+            <p class="text-sm text-maeda-text/60 mt-1">楽天レビュー平均</p>
+          </div>
+          <div>
+            <p class="text-4xl md:text-5xl font-black text-maeda-gold">91<span class="text-2xl">%</span></p>
+            <p class="text-sm text-maeda-text/60 mt-1">★5の割合</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- レビュー3件 -->
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-maeda-bg rounded-xl p-6">
+          <div class="flex mb-3">
+            <span class="text-maeda-gold">★★★★★</span>
+          </div>
+          <p class="text-maeda-text leading-relaxed mb-4">
+            「他のお米は、もう食べられません。一度食べたらわかります。」
+          </p>
+          <p class="text-sm text-maeda-text/50">楽天レビューより</p>
+        </div>
+        <div class="bg-maeda-bg rounded-xl p-6">
+          <div class="flex mb-3">
+            <span class="text-maeda-gold">★★★★★</span>
+          </div>
+          <p class="text-maeda-text leading-relaxed mb-4">
+            「発芽玄米を作りたくて選びました。水に浸けたら本当に白い根が出てきた。」
+          </p>
+          <p class="text-sm text-maeda-text/50">楽天レビューより</p>
+        </div>
+        <div class="bg-maeda-bg rounded-xl p-6">
+          <div class="flex mb-3">
+            <span class="text-maeda-gold">★★★★★</span>
+          </div>
+          <p class="text-maeda-text leading-relaxed mb-4">
+            「炊飯器で炊いた玄米が今までで一番美味しかった。吸水なしでも十分です。」
+          </p>
+          <p class="text-sm text-maeda-text/50">楽天レビューより</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       5. 生産者紹介
+       ============================================================ -->
+  <section class="bg-maeda-bg">
+    <div class="max-w-4xl mx-auto px-4 py-16 md:py-24">
+      <div class="md:flex md:gap-12 md:items-center">
+        <!-- 写真 -->
+        <div class="bg-maeda-light rounded-2xl h-72 md:h-auto md:w-80 md:min-h-[360px] flex items-center justify-center text-maeda-green/40 mb-8 md:mb-0 shrink-0">
+          <span class="text-xs">写真: ジュンジ（カメラ目線、田んぼ背景）</span>
+        </div>
+        <!-- テキスト -->
+        <div>
+          <h2 class="text-2xl md:text-3xl font-black mb-6 text-maeda-green">
+            田んぼと一緒に、<br>育ってきました。
+          </h2>
+          <div class="space-y-4 text-maeda-text/80 leading-relaxed">
+            <p>
+              兵庫県たつの市。揖保乃糸と薄口醤油で知られる、発酵文化の町。
+              ここで曾祖父の代から約100年、米を作り続けています。
+            </p>
+            <p>
+              子どもが生まれた時、食べさせるものは自分が信じられるもんにする、と決めた。
+              農薬をやめた。肥料もやめた。代わりに見つけたのが、競走馬のうんこだった。
+            </p>
+            <p>
+              12年かけて磨いた独自の発酵技術で、土が変わった。
+              胚芽が生きた、発芽する玄米が育つようになった。
+            </p>
+            <p class="font-bold text-maeda-text">
+              前田屋 4代目　前田 遵詞
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       6. 商品ラインナップ
+       ============================================================ -->
+  <section id="products" class="bg-white">
+    <div class="max-w-4xl mx-auto px-4 py-16 md:py-24">
+      <h2 class="text-2xl md:text-4xl font-black text-center mb-4 text-maeda-green">
+        お米を選ぶ
+      </h2>
+      <p class="text-center text-maeda-text/60 mb-12">4つの品種からお選びいただけます</p>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <!-- ミルキークイーン -->
+        <div class="bg-maeda-bg rounded-2xl p-6">
+          <div class="bg-maeda-light rounded-xl h-40 flex items-center justify-center text-maeda-green/40 mb-4">
+            <span class="text-xs">写真: ミルキークイーン</span>
+          </div>
+          <h3 class="text-xl font-black mb-2">ミルキークイーン</h3>
+          <p class="text-maeda-text/70 text-sm mb-3">もちもち食感、冷めても美味しい。お弁当にも。前田屋の看板品種。</p>
+          <div class="flex gap-4 text-sm">
+            <span class="bg-maeda-light text-maeda-green font-bold px-3 py-1 rounded-full">玄米 5kg 6,480円</span>
+            <span class="bg-maeda-light text-maeda-green font-bold px-3 py-1 rounded-full">白米 5kg 6,980円</span>
+          </div>
+        </div>
+
+        <!-- にこまる -->
+        <div class="bg-maeda-bg rounded-2xl p-6">
+          <div class="bg-maeda-light rounded-xl h-40 flex items-center justify-center text-maeda-green/40 mb-4">
+            <span class="text-xs">写真: にこまる</span>
+          </div>
+          <h3 class="text-xl font-black mb-2">にこまる</h3>
+          <p class="text-maeda-text/70 text-sm mb-3">大粒でふっくら、食べ応え抜群。しっかりした粒感が好きな方に。</p>
+          <div class="flex gap-4 text-sm">
+            <span class="bg-maeda-light text-maeda-green font-bold px-3 py-1 rounded-full">玄米 5kg 6,480円</span>
+            <span class="bg-maeda-light text-maeda-green font-bold px-3 py-1 rounded-full">白米 5kg 6,980円</span>
+          </div>
+        </div>
+
+        <!-- イセヒカリ -->
+        <div class="bg-maeda-bg rounded-2xl p-6">
+          <div class="bg-maeda-light rounded-xl h-40 flex items-center justify-center text-maeda-green/40 mb-4">
+            <span class="text-xs">写真: イセヒカリ</span>
+          </div>
+          <h3 class="text-xl font-black mb-2">イセヒカリ</h3>
+          <p class="text-maeda-text/70 text-sm mb-3">すっきりした味わい。伊勢神宮の神田で生まれた品種。</p>
+          <div class="flex gap-4 text-sm">
+            <span class="bg-maeda-light text-maeda-green font-bold px-3 py-1 rounded-full">玄米 5kg 6,480円</span>
+            <span class="bg-maeda-light text-maeda-green font-bold px-3 py-1 rounded-full">白米 5kg 6,980円</span>
+          </div>
+        </div>
+
+        <!-- 夢ごこち -->
+        <div class="bg-maeda-bg rounded-2xl p-6">
+          <div class="bg-maeda-light rounded-xl h-40 flex items-center justify-center text-maeda-green/40 mb-4">
+            <span class="text-xs">写真: 夢ごこち</span>
+          </div>
+          <h3 class="text-xl font-black mb-2">夢ごこち</h3>
+          <p class="text-maeda-text/70 text-sm mb-3">上品な甘み、粘りが強い。ミルキークイーンの親品種。</p>
+          <div class="flex gap-4 text-sm">
+            <span class="bg-maeda-light text-maeda-green font-bold px-3 py-1 rounded-full">玄米 5kg 6,480円</span>
+            <span class="bg-maeda-light text-maeda-green font-bold px-3 py-1 rounded-full">白米 5kg 6,980円</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       7. CTA + FAQ
+       ============================================================ -->
+  <section class="bg-maeda-green text-white">
+    <div class="max-w-4xl mx-auto px-4 py-16 md:py-24">
+      <!-- CTA -->
+      <div class="text-center mb-16">
+        <h2 class="text-2xl md:text-4xl font-black mb-4">
+          100年農家が育てた、<br>発芽する玄米。
+        </h2>
+        <p class="text-white/70 mb-8">農家直送。真空パックでお届けします。</p>
+        <a href="#products" class="inline-block bg-maeda-gold text-white font-bold text-lg px-10 py-4 rounded-full hover:opacity-90 transition-opacity">
+          食べてみる
+        </a>
+        <!-- 安心ポイント -->
+        <div class="flex justify-center gap-6 mt-8 text-sm text-white/70">
+          <span>有機JAS認証</span>
+          <span>農家直送</span>
+          <span>真空パック</span>
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <div class="border-t border-white/20 pt-12">
+        <h3 class="text-xl font-black text-center mb-8">よくあるご質問</h3>
+        <div class="space-y-6 max-w-2xl mx-auto">
+          <div>
+            <p class="font-bold mb-2">Q. 発芽玄米はどうやって作るの？</p>
+            <p class="text-white/70 leading-relaxed">
+              水に12〜24時間浸すだけ。白い根が出てきたら完成です。詳しいガイドを同梱しています。
+            </p>
+          </div>
+          <div>
+            <p class="font-bold mb-2">Q. 玄米の炊き方は？</p>
+            <p class="text-white/70 leading-relaxed">
+              炊飯器の白米モードでそのまま炊けます。吸水なしでも美味しく炊けるのが前田屋の玄米の特徴です。
+            </p>
+          </div>
+          <div>
+            <p class="font-bold mb-2">Q. 保存方法は？</p>
+            <p class="text-white/70 leading-relaxed">
+              真空パックで常温保存できます。開封後は冷蔵庫での保管をおすすめします。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- フッター -->
+  <footer class="bg-maeda-text text-white/50 text-center text-sm py-8">
+    <p>お米の前田屋 | 兵庫県たつの市</p>
+  </footer>
+
+</body>
+</html>
